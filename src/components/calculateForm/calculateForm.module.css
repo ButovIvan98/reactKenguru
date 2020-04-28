@@ -35,6 +35,26 @@ width: 100%;
     border: none;
 	border-top: 2px dashed #ddd;
 }
+.buttonAddCargo{
+    background: transparent;
+    border:0;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    right: 142px;
+    outline: none!important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.buttonAddCargo:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+.svg{
+    padding-right: 5px;
+    height: 20px;
+    right: 20px;
+    font-weight: bold;
+}
 @media (max-width: 991px) {
     .blockCalculate{
         width: 100%!important;

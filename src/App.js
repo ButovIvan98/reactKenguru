@@ -30,7 +30,7 @@ const App = () => {
                 <div className={'col-12 pl-0 pr-0'}>
                     <div className={classNamees.containerMain}>
                         <Switch>
-                            <Route path='/kenguru' exact render={() => <MainPage />}/>
+                            <Route path='/' exact render={() => <MainPage />}/>
                             <Route path='/express/my_address' render={() => <AddressContainerExport />} />
                             <Route path='/myShipments' render={() => <ExportMyShipmentsContainer />} />
                             <Route path='/login' render={() => <AuthorizationContainerExport />} />
