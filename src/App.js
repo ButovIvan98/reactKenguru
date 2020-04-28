@@ -1,70 +1,59 @@
-import React, {Component} from 'react';
-import Container from "@material-ui/core/Container"
-import Watch from './Watch';
-import TodoList from './TodoList';
-import TodoItem from './TodoItem'
-
-
-class App extends Component{
-  constructor(){
-    super()
-    this.state ={
-      items:[],
-      currentItem: {text:"помыть кота", key:"firstItem"}
-    }
-  }
-
-
-  handleInput = e =>{
-    const itemText = e.target.value
-    const currentItem = {text:itemText, key: Date.now() }
-    this.setState({
-        currentItem,
-    })
-}
-addItem = e =>{
-    e.preventDefault()
-    const newItem = this.state.currentItem
-    if(newItem.text !==''){
-        console.log(newItem)
-        const items = [...this.state.items, newItem]
-        this.setState({
-            items: items,
-            currentItem: {text: '', key:''}
-        })
-    }
-}
-
-deleteItem = key =>{
-        const filteredItems = this.state.items.filter(item=> {
-            return item.key !== key
-        })
-        this.setState({
-            items:filteredItems,
-        })
-}
-
-
-  render(){
-    return(
-      <Container maxWidth="sm">
-      <Watch />
-        <h1> Приложение для своих дел</h1>
-      <TodoList
-      
-      addItem={this.addItem}
-      inputElement={this.inputElement}
-      handleInput={this.handleInput}
-      currentItem={this.state.currentItem}
-
-      
-      />
-      <TodoItem  entries = {this.state.items} deleteItem={this.deleteItem} />
-      </Container> 
-    )
-  }
-
-
-}
-
+import React from 'react';
+import classNamees from './index.module.css'
+import Footer from './components/footer/footer';
+import { Route, Router, Switch } from "react-router-dom";
+import HeaderContainer from "./components/header/headerСontainer";
+import AuthorizationContainerExport from "./components/authorization/authorizationUser/authorizationContainer";
+import AddressContainerExport from "./components/express/my_address/add_address/add_addressContainer";
+import AboutMe from "./components/footer/aboutMe/aboutMe";
+import PolicyAndPrivacy from "./components/footer/policyAndPrivacy/policyAndPrivacy";
+import PublicOffer from "./components/footer/publicOffer/publicOffer";
+import PaymentMethod from "./components/footer/PaymentMethod/paymentMethod";
+import ExportTransportCompany from "./components/footer/transportCompany/transportCompanyContainer";
+import ExportProfileTransportCompany from "./components/footer/transportCompany/profileCompany/profileCompanyContainer";
+import ExportMyShipmentsContainer from "./components/express/myShipments/myShipmentsContainer";
+import ExportMyShipmentsInformationContainer from "./components/express/myShipments/myShipmentsInformation/myShipmentsInformationContainer";
+import RegistrationContainerExport from "./components/authorization/registrationUser/registrationContainer";
+import { Alert } from 'bootstrap-4-react';
+import { ExportReloadPasswordContainer } from "./components/authorization/reloadPassword/reloadPasswordContainer";
+import NotificationReloadPassword from "./components/authorization/reloadPassword/notificationReloadPassword";
+import ExportContactContainer from './components/footer/contacts/contactsContainer';
+import ExportWebsitePlaginContainer from './components/footer/websitePlagin/websitePlaginContainer';
+import MainPage from "./components/express/main-page/mainPage";
+const App = () => {
+    return (
+        <div className={'container-fluid pl-0 pr-0' + ' ' + classNamees.main}>
+            <div className={'row mr-0 ml-0'}>
+                <div className={'col-12 pr-0 pl-0'}>
+                    <HeaderContainer />
+                </div>
+                <div className={'col-12 pl-0 pr-0'}>
+                    <div className={classNamees.containerMain}>
+                        <Switch>
+                            <Route path='/kenguru' exact render={() => <MainPage />}/>
+                            <Route path='/express/my_address' render={() => <AddressContainerExport />} />
+                            <Route path='/myShipments' render={() => <ExportMyShipmentsContainer />} />
+                            <Route path='/login' render={() => <AuthorizationContainerExport />} />
+                            <Route path={'/aboutMe'} render={() => <AboutMe />} />
+                            <Route path={'/contact'} render={() => <ExportContactContainer />} />
+                            <Route path={'/policy'} render={() => <PolicyAndPrivacy />} />
+                            <Route path={'/publicOffer'} render={() => <PublicOffer />} />
+                            <Route path={'/paymentMethod'} render={() => <PaymentMethod />} />
+                            <Route path={'/transportCompany'} render={() => <ExportTransportCompany />} />
+                            <Route path={'/profileCompany/'} render={() => <ExportProfileTransportCompany />} />
+                            <Route path={'/1'} render={() => <ExportMyShipmentsInformationContainer />} />
+                            <Route path={'/registration'} render={() => <RegistrationContainerExport />} />
+                            <Route path={'/reloadPassword'} render={() => <ExportReloadPasswordContainer />} />
+                            <Route path={'/notificationReloadPassword'} render={() => <NotificationReloadPassword />} />
+                            <Route path={'/websitePlagin'} render={()=> <ExportWebsitePlaginContainer />} />
+                        </Switch>
+                    </div>
+                </div>
+                <div className={'col-12'}>
+                    <Footer />
+                </div>
+            </div>
+        </div>
+    );
+};
 export default App;
