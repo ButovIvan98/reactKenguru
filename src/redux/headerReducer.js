@@ -7,7 +7,7 @@ let initialState = {
         {id: '/express/calculate', title: 'Калькулятор', active: 'classNamees.active'},
         {id: '/myShipments', title: 'Мои отправления', active: 'classNamees.active'},
         {id: '', title: 'Счета и оплата', active: 'classNamees.active'},
-        {id: '/express/my_address', title: 'Адресная книга', active: 'classNamees.active'},
+        {id: '/express/myAddress', title: 'Адресная книга', active: 'classNamees.active'},
     ],
     Cargo_main: [
         {id: '/car', title: 'Найти машины', active: 'classNamees.active'},

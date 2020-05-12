@@ -3,7 +3,6 @@ import BlockResult from "./blockResult/blockResult";
 import FilterResult from "./filterResult/filterResult";
 
 const CalculateResult = (props) => {
-    debugger
     let listBLock = props.calculate.resultCalculate.map(nav => (
             <BlockResult
                 img={nav.imgCompany}

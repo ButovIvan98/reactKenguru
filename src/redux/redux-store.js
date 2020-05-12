@@ -14,6 +14,7 @@ import MyShipmentsInformationReducer from "./myShipmentsInformationReducer";
 import CalculateFormReducer from "./calculateFormReducer";
 import ContactReducer from "./contactReducer";
 import FeedbackReducer from "./feedbackReducer";
+import MyAddressReducer from "./myAddressReducer";
 
 let reducers = combineReducers({
     ProfilePage: ContentReducer,
@@ -29,7 +30,8 @@ let reducers = combineReducers({
     MyShipmentsInformationReducerPage: MyShipmentsInformationReducer,
     CalculateFormPage: CalculateFormReducer,
     ContactPage: ContactReducer,
-    FeedbackForm: FeedbackReducer
+    FeedbackForm: FeedbackReducer,
+    AddressPage: MyAddressReducer
 });
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));
 window.store = store;

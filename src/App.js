@@ -4,7 +4,7 @@ import Footer from './components/footer/footer';
 import { Route, Router, Switch } from "react-router-dom";
 import HeaderContainer from "./components/header/headerСontainer";
 import AuthorizationContainerExport from "./components/authorization/authorizationUser/authorizationContainer";
-import AddressContainerExport from "./components/express/my_address/add_address/add_addressContainer";
+import AddressContainerExport from "./components/express/myAddress/add_address/add_addressContainer";
 import AboutMe from "./components/footer/aboutMe/aboutMe";
 import PolicyAndPrivacy from "./components/footer/policyAndPrivacy/policyAndPrivacy";
 import PublicOffer from "./components/footer/publicOffer/publicOffer";
@@ -20,6 +20,8 @@ import NotificationReloadPassword from "./components/authorization/reloadPasswor
 import ExportContactContainer from './components/footer/contacts/contactsContainer';
 import ExportWebsitePlaginContainer from './components/footer/websitePlagin/websitePlaginContainer';
 import MainPage from "./components/express/main-page/mainPage";
+import ExportMyAddressContainer from "./components/express/myAddress/myAddressContainer";
+import AddAddress from "./components/express/myAddress/add_address/add_address";
 const App = () => {
     return (
         <div className={'container-fluid pl-0 pr-0' + ' ' + classNamees.main}>
@@ -31,7 +33,7 @@ const App = () => {
                     <div className={classNamees.containerMain}>
                         <Switch>
                             <Route path='/' exact render={() => <MainPage />}/>
-                            <Route path='/express/my_address' render={() => <AddressContainerExport />} />
+                            <Route path='/express/myAddress' render={() => <ExportMyAddressContainer />} />
                             <Route path='/myShipments' render={() => <ExportMyShipmentsContainer />} />
                             <Route path='/login' render={() => <AuthorizationContainerExport />} />
                             <Route path={'/aboutMe'} render={() => <AboutMe />} />
@@ -46,6 +48,7 @@ const App = () => {
                             <Route path={'/reloadPassword'} render={() => <ExportReloadPasswordContainer />} />
                             <Route path={'/notificationReloadPassword'} render={() => <NotificationReloadPassword />} />
                             <Route path={'/websitePlagin'} render={()=> <ExportWebsitePlaginContainer />} />
+                            <Route path={'/addAddress'} render={()=><AddAddress/>}/>
                         </Switch>
                     </div>
                 </div>

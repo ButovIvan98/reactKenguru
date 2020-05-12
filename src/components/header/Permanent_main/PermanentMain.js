@@ -15,7 +15,7 @@ const Permanent_main = (props) => {
     return <div className={'container-fluid'}>
         <div className={'row' + ' ' + classNamees.mainBlock}>
             <div className={'col-lg-3 col-3 mt-lg-1 mb-1' + ' ' + classNamees.indexHeaderLogo}>
-                <NavLink to="/kenguru">
+                <NavLink to="/">
                     <KenguruIcons />
                     <KenguruText />
                 </NavLink>

@@ -79,12 +79,9 @@ const CalculateForm = (props) => {
                 <div className={'col-12'}>
                     {listCargo}
                 </div>
-                <div className={'col-12 text-right'}>
-                    <button className={classes.buttonAddCargo} onClick={() => (props.addCargo(props.calculate.listCargo.length))}>
-                        <svg className={classes.svg} width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 0V16M16 8H0" stroke="black"/>
-                        </svg>
-                         Добавить груз
+                <div className={'col-12'}>
+                    <button onClick={() => (props.addCargo(props.calculate.listCargo.length))}>
+                        Добавить груз
                     </button>
                 </div>
             </div>
