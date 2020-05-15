@@ -43,7 +43,7 @@
     object-fit: cover;
 }
 .blockInfoSlider{
-    bottom: 40px
+    bottom: 40px;
     cursor: pointer;
     background: rgba(0,0,0,0.5);
 }
