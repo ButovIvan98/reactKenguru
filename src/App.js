@@ -25,6 +25,7 @@ import AddAddress from "./components/express/myAddress/add_address/add_address";
 import MyPayment from "./components/express/myPayment/myPayment";
 import AddCompany from "./components/express/addCompany/addCompany";
 import Plan from "./components/plan";
+import PersonalAccountContainerExport from "./components/express/personalAccount/personalAccountContainer";
 const App = () => {
     return (
         <div className={'container-fluid pl-0 pr-0' + ' ' + classNamees.main}>
@@ -55,6 +56,7 @@ const App = () => {
                             <Route path={'/myPayment'} render={()=><MyPayment/>}/>
                             <Route path={'/addCompany'} render={()=><AddCompany/>}/>
                             <Route path={'/plan'} render={()=><Plan/>}/>
+                            <Route path={'/personalAccount'} render={()=><PersonalAccountContainerExport/>}/>
                         </Switch>
                     </div>
                 </div>
