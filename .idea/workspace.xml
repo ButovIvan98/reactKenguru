@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c8f36c5-f73a-4c7e-82fb-7aecf26b4ff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/appContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/confirmationEmail/confirmationEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/confirmationEmail/confirmationEmailContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/confirmationEmail/css/confirmationEmail.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/reloadPassword/css/reloadPassword.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/resetPassword/css/resetPassword.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/resetPassword/resetPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authorization/resetPassword/resetPassworsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/selectBlock/blockMainSelectContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authorization/authorizationUser/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authorization/authorizationUser/authorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authorization/authorizationUser/authorizationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authorization/authorizationUser/authorizationContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authorization/reloadPassword/notificationReloadPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authorization/reloadPassword/reloadPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authorization/reloadPassword/reloadPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authorization/reloadPassword/reloadPasswordContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authorization/reloadPassword/reloadPasswordContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calculateForm/calculateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculateForm/calculateForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/selectBlock/blockMainSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/selectBlock/blockMainSelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/selectBlock/blockMainSelect.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/selectBlock/blockMainSelect.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/express/myPayment/blockPayment/blockPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/express/myPayment/blockPayment/blockPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/express/order/css/order.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/express/order/css/order.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/express/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/express/order/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/express/personalAccount/setting/setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/express/personalAccount/setting/setting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/express/personalAccount/setting/settingContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/express/personalAccount/setting/settingContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Permanent_main/PermanentMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Permanent_main/PermanentMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Permanent_main/PermanentMainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Permanent_main/PermanentMainContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/headerСontainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerСontainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/calculateFormReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/calculateFormReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/headerReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/headerReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/myShipmentsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/myShipmentsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/orderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/registrationReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/registrationReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/settingReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/settingReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userReducer.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aI1QnGh6OO6vnVQStLuoWSzTyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/authorization/registrationUser/img" />
+      <recent name="$PROJECT_DIR$/src/components/authorization/authorizationUser/img" />
+      <recent name="$PROJECT_DIR$/src/components/express/order/orderSent/img" />
+      <recent name="$PROJECT_DIR$/src/components/express/order" />
+      <recent name="$PROJECT_DIR$/src/components/express/order/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/authorization/confirmationEmail" />
+      <recent name="$PROJECT_DIR$/src/components/authorization/registrationUser" />
+      <recent name="$PROJECT_DIR$/src/components/express/order/blockDate" />
+      <recent name="$PROJECT_DIR$/src/components/express/order/orderData" />
+      <recent name="C:\Users\Админ\Documents\GitHub\react-django\frontend\src\components\express\main-page\calculateResult\blockResult\img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c8f36c5-f73a-4c7e-82fb-7aecf26b4ff2" name="Default Changelist" comment="" />
+      <created>1586408279430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586408279430</updated>
+      <workItem from="1586408281286" duration="26590000" />
+      <workItem from="1589276492056" duration="548000" />
+      <workItem from="1589277067209" duration="95000" />
+      <workItem from="1589279114171" duration="8957000" />
+      <workItem from="1589354060525" duration="7899000" />
+      <workItem from="1589363593601" duration="7578000" />
+      <workItem from="1589422262317" duration="33931000" />
+      <workItem from="1589944040111" duration="1878000" />
+      <workItem from="1589946527639" duration="3490000" />
+      <workItem from="1589960089796" duration="2332000" />
+      <workItem from="1589962704130" duration="29910000" />
+      <workItem from="1590376171662" duration="8102000" />
+      <workItem from="1590461846094" duration="22954000" />
+      <workItem from="1590497323958" duration="10271000" />
+      <workItem from="1590570634871" duration="3115000" />
+      <workItem from="1590635357069" duration="18089000" />
+      <workItem from="1590721071041" duration="55132000" />
+      <workItem from="1591171519366" duration="9756000" />
+      <workItem from="1591241397429" duration="16155000" />
+      <workItem from="1591437504953" duration="69000" />
+      <workItem from="1591600132547" duration="38895000" />
+      <workItem from="1591940297757" duration="1887000" />
+      <workItem from="1591942283264" duration="1473000" />
+      <workItem from="1591944511421" duration="1507000" />
+      <workItem from="1591946387266" duration="1726000" />
+      <workItem from="1591957419394" duration="892000" />
+      <workItem from="1592025809374" duration="51000" />
+      <workItem from="1592025994689" duration="29361000" />
+      <workItem from="1592465218704" duration="11770000" />
+      <workItem from="1592483230457" duration="4584000" />
+      <workItem from="1592539611778" duration="10653000" />
+      <workItem from="1592566934680" duration="24490000" />
+      <workItem from="1592650627783" duration="2999000" />
+      <workItem from="1592799761455" duration="11799000" />
+      <workItem from="1592819798221" duration="4381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="73" key="#Dockerfile" timestamp="1586408545730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="73" key="#Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1586408545730" />
+    <state x="442" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592027117296">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="442" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/49.27.1871.1053@49.27.1871.1053" timestamp="1592027117296" />
+    <state x="717" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592577983270">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="717" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1871.1053@49.27.1871.1053" timestamp="1592577983270" />
+    <state x="770" y="304" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589944579400">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586751958045" />
+    <state x="770" y="304" width="424" height="484" key="FileChooserDialogImpl/49.27.1871.1053@49.27.1871.1053" timestamp="1589944579400" />
+    <state x="473" y="187" key="SettingsEditor" timestamp="1592027174055">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="473" y="187" key="SettingsEditor/49.27.1871.1053@49.27.1871.1053" timestamp="1592027174055" />
+    <state x="675" y="291" width="702" height="522" key="find.popup" timestamp="1591947033598">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="675" y="291" width="702" height="522" key="find.popup/49.27.1871.1053@49.27.1871.1053" timestamp="1591947033598" />
+    <state x="649" y="270" key="run.anything.popup" timestamp="1591268020617">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586508711979" />
+    <state x="649" y="270" key="run.anything.popup/49.27.1871.1053@49.27.1871.1053" timestamp="1591268020617" />
+    <state x="647" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1592807870388">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="647" y="257" width="672" height="678" key="search.everywhere.popup/49.27.1871.1053@49.27.1871.1053" timestamp="1592807870388" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/express/personalAccount/personalAccount.js</url>
+          <line>200</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
