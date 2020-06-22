@@ -31,7 +31,8 @@
     "recharts": "^1.8.5",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
-    "start": "^5.1.0"
+    "start": "^5.1.0",
+    "yarn.lock": "0.0.1-security"
   },
   "scripts": {
     "start": "node server.js",
