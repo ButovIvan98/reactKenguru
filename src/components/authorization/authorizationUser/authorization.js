@@ -34,18 +34,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const SignIn = (props) => {
-    const classNamees = useStyles();
+    const classes = useStyles();
     return (
         <Container component="main" maxWidth="xs">
             <CssBaseline/>
-            <div className={classNamees.paper}>
-                <Avatar className={classNamees.avatar}>
+            <div className={classes.paper}>
+                <Avatar className={classes.avatar}>
                     <LockOutlinedIcon/>
                 </Avatar>
                 <Typography component="h1" variant="h5">
                     Авторизация
                 </Typography>
-                <form className={classNamees.form} noValidate>
+                <form className={classes.form} noValidate>
                     <TextField
                         variant="outlined"
                         margin="normal"
@@ -56,8 +56,10 @@ const SignIn = (props) => {
                         name="email"
                         autoComplete="email"
                         autoFocus
-                        onChange={(e) => (props.updateEmail(e.target.value))}
+                        onChange={(e) => (props.Email(e.target.value))}
                         value={props.authorization.email}
+                        error={props.authorization.validEmail ? false:true}
+                        helperText={props.authorization.validEmail ? '' : 'Введите Email'}
                     />
                     <TextField
                         variant="outlined"
@@ -84,7 +86,7 @@ const SignIn = (props) => {
                                 fullWidth
                                 variant="contained"
                                 color="primary"
-                                className={classNamees.submit}
+                                className={classes.submit}
                                 onClick={()=>(props.auth(props.authorization.email, props.authorization.password))}
                             >
                                 Авторизация
@@ -92,7 +94,7 @@ const SignIn = (props) => {
                     }
                     <Grid container>
                         <Grid item xs>
-                            <NavLink to={'/reloadPassword'} variant="body2">
+                            <NavLink to={props.authorization.validEmail ? '/reloadPassword' : '/login'} onClick={props.authorization.validEmail ? ()=>{props.reloadPasswordUser(props.authorization.email)}: null} variant="body2">
                                 Забыли пароль?
                             </NavLink>
                         </Grid>

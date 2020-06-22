@@ -1,3 +1,6 @@
+import {userAPI} from "../API/api";
+import {auth} from "./authReducer";
+
 const INPUT_TEXT_EMAIL = 'INPUT_TEXT_EMAIL';//Емаил
 const INPUT_TEXT_PASSWORD = 'INPUT_TEXT_PASSWORD';//Пароль
 const NOTIFICATION = 'NOTIFICATION';//уведомление
@@ -99,7 +102,12 @@ export const updateChecked = (value) => {
 /*Добавление User-а*/
 export const addUser = (password, email) => {
     return (dispatch) => {
-        dispatch(addUserStatus(true));
+
+        userAPI.getUsers(email,password).then(response=>{
+            dispatch(addUserStatus(true));
+            //dispatch(auth(password,email));
+        }).catch(error=>{console.log(error.response.data)})
+        //dispatch(addUserStatus(true));
     }
 };
 
@@ -119,7 +127,7 @@ export const Email = (email) => {
 export const Password = (password) => {
     return (dispatch) => {
         dispatch(updateTextPassword(password));
-        if (!/[a-zA-Z0-9]/.test(password) || password.length < 6) {
+        if (!/[a-zA-Z0-9]/.test(password) || password.length < 8) {
             dispatch(checkValidPassword(false, '1px solid red'));
         } else {
             dispatch(checkValidPassword(true, '1px solid #c0e4f9'));
